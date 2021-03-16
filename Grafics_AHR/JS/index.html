@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<head>
+    <h1>Poblaciones mundiales por continente</h1>
+    <h2>//Visualización de datos // Alejandro Rojas</h2>
+    <h4>Práctica de D3.js para ocupar la función de "Transition()"</h4>
+    <h4>Dicha medición se realiza a través de un data set que promedia los valores ponderados</h4>
+  <meta charset="utf-8">
+  <title>D3.selectAll(...).transition() Explained</title>
+  <meta content="Explaining D3.selectAll(...).transition() behaviour" name="description">
+  </head>
+<body>
+  <link rel="stylesheet" href="d3_selectAll_transition_explained.css">
+
+  <div class='top-container'>
+     <form action="">
+      <input type="radio" name="step" onclick="_goToStage(this.value)" value=0 checked><span class="comment">Inicia la gráficación</span><br>
+      <input type="radio" name="step" onclick="_goToStage(this.value)" value=1><span class="space-2">d3.selectAll ("Función que selecciona todos los circulos representativos")</span><br>
+      <input type="radio" name="step" onclick="_goToStage(this.value)" value=2><span class="space-4">.transition() ("Función que desagrega cada uno de los valores")</span><br>
+      <input type="radio" name="step" style="visibility:hidden"><span class="space-6">.attr("delay", func(d,i){return 1000*i})</span><br>
+      <input type="radio" name="step" style="visibility:hidden"><span class="space-6">.attr("duration", func(d,i){return 1000*(i+1)})</span><br>
+      <input type="radio" name="step" style="visibility:hidden"><span class="space-6">.attr("cy", func(d,i){return 30*(i+1)})</span><br>
+      <input type="radio" name="step" onclick="_goToStage(this.value)" value=3><span class="comment">Muestra del retraso (Fin de la graficación que muestra el avance con el retraso de cada circulo representativo en al avance de la población promedio</span>
+    </form>
+    <div class="explanation-area">&nbsp;</div>
+  </div>
+  <hr/>
+
+  <script src="https://d3js.org/d3.v3.min.js"></script>
+  <script src="d3_selectAll_transition_explained.js"></script>
+</body>

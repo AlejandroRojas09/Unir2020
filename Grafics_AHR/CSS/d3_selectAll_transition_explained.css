@@ -1,0 +1,52 @@
+.top-container {
+    position: relative;
+    width: 960px;
+    height: 160px;
+  }
+  
+  input {
+    margin-right: 10px;
+  }
+  
+  span.comment {
+    color: red;
+  }
+  
+  span.space-2 {
+    margin-left: 10px;
+  }
+  
+  span.space-4 {
+    margin-left: 20px;
+  }
+  
+  span.space-6 {
+    margin-left: 30px;
+  }
+  
+  .explanation-area {
+    position: absolute;
+    left: 380px;
+    top: 0px;
+  }
+  
+  svg{
+    position: absolute;
+    top: 0px;
+  }
+  
+  line {
+    stroke-width: 1.5px;
+    stroke: rgb(231, 19, 19);
+  }
+  
+  circle {
+    fill-opacity: .2;
+    stroke-width: 1.5px;
+    fill: rgb(41, 30, 196);
+  }
+  
+  path {
+    stroke: rgb(7, 163, 33);
+    stroke-width: 1.5px;
+  }
